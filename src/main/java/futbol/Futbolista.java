@@ -21,6 +21,9 @@ public class Futbolista implements comparable {
 			return false;
 		} 
 	}
+	public int compareTo(Object o){
+	       return 0;		
+	}
 	abstract boolean jugarConLasManos();
 		
 	public String toString() {
