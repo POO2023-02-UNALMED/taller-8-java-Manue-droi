@@ -6,18 +6,18 @@ public class Portero extends Futbolista {
 	
 	
 	public Portero() {
-		super("Maradona", 30, "portero");
-		this.golesRecibidos = 150;
-		this.dorsal = 1;
+		super("Maradona",30,"portero");
+		// TODO Auto-generated constructor stub
 	}
-	public Portero(String nombre, int edad, short golesRecibidos, byte dorsal) {
-		super(nombre, edad, "portero");
-		this.golesRecibidos = golesRecibidos;
+	public Portero(String nombre, int edad, short goles, byte dorsal) {
+		super(nombre, edad, "portero" );
+		this.golesRecibidos = goles;
 		this.dorsal = dorsal;
+		// TODO Auto-generated constructor stub
 	}
-	public String toString() {
-		return super.toString()+" con el dorsal "+this.dorsal+". Ha marcado "+this.golesRecibidos;
-	}
+	 public String toString() {
+		 return super.toString()+" con el dorsal "+this.dorsal+". Le han marcado "+this.golesRecibidos;
+    }
 	public int compareTo(Portero f){
 		 Portero otroPortero = (Portero) f;
 	        return Math.abs(this.getGolesRecibidos() - otroPortero.getGolesRecibidos());
