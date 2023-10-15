@@ -6,9 +6,9 @@ public class Portero extends Futbolista {
 	
 	
 	public Portero() {
-		super("Maradona", 30, "portero");
-		this.golesRecibidos = golesRecibidos;
-		this.dorsal = dorsal;
+		super("Maradona", 30);
+		this.golesRecibidos = 150;
+		this.dorsal = 1;
 	}
 	public Portero(String nombre, int edad, short golesRecibidos, byte dorsal) {
 		super(nombre, edad, "portero");
@@ -17,7 +17,7 @@ public class Portero extends Futbolista {
 	}
 	public String toString() {
 		return 
-			super.toString()+" con el dorsal "+this.dorsal+". Le han marcado "+this.golesRecibidos;
+				super.toString()+" con el dorsal "+this.dorsal+ ". Ha marcado "+this.golesRecibidos;
 	}
 	public int compareTo(Portero f){
 		 Portero otroPortero = (Portero) f;
