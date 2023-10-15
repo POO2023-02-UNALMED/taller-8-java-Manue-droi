@@ -4,9 +4,6 @@ public class Portero extends Futbolista {
 	public short golesRecibidos;
 	public byte dorsal;
 	
-	public Portero() {
-		this("Maradona", 30,"delantero", (short) 289, (byte)7);
-	}
 	public Portero(String nombre, int edad, String posicion, short golesRecibidos, byte dorsal) {
 		super(nombre, edad, "portero");
 		this.golesRecibidos = golesRecibidos;
