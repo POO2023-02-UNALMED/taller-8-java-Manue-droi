@@ -5,7 +5,7 @@ public class Jugador extends Futbolista {
 	public byte dorsal;
 	
 	public Jugador() {
-		super();
+		super("Maradona", 30, "delantero");
 		this.golesMarcados = 289;
 		this.dorsal = 7;
 	}
