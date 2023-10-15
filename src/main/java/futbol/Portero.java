@@ -12,7 +12,7 @@ public class Portero extends Futbolista {
 	}
 	public String toString() {
 		return 
-			super.toString()+" con el dorsal "+this.dorsal+". Le han marcado "+this.golesRecibidos;
+			super.toString()+" con el dorsal "+this.getDorsal()+". Le han marcado "+this.getGolesRecibidos();
 	}
 	public int compareTo(Portero p){
 		 Portero otroPortero = (Portero) p;
