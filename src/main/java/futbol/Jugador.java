@@ -5,7 +5,7 @@ public class Jugador extends Futbolista {
 	public byte dorsal;
 	
 	public Jugador() {
-		this("Maradona","delantero", 30, 289, 7);
+		this("Maradona", 30, "delantero", 289, 7);
 	}
 	public boolean jugarConLasManos();
 	
@@ -14,18 +14,13 @@ public class Jugador extends Futbolista {
 		this.golesMarcados = golesMarcados;
 		this.dorsal = dorsal;
 	}
-	public boolean jugarConLasManos() {
-		return false;
-	}
-	
 	public String toString() {
-		return "El futbolista" + this.getNombre() + " tiene " + this.getEdad() + "juega de " + this.getPosicion() + "con el dorsal" + this.dorsal()+ ". Ha marcado" + this.Dorsal();
+		return "El futbolista" + this.getNombre() + " tiene " + this.getEdad() + "juega de " + this.getPosicion() + "con el dorsal" + this.dorsal()+ ". Ha marcado" + this.dorsal();
 	}
     public int compareTo(Futbolista f){
         return Math.abs(this.getEdad()-f.getEdad());
     }
-
-	
-	
-	
+    public boolean jugarConLasManos() {
+		return false;
+	}	
 }
