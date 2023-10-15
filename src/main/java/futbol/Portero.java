@@ -15,12 +15,25 @@ public class Portero extends Futbolista {
 	}
 	public String toString() {
 		return 
-			super.toString() + "con el dorsal" + dorsal + ". Le han marcado" + golesRecibidos;
+			super.toString() + "con el dorsal" + this.dorsal + ". Le han marcado" + this.golesRecibidos;
 	}
 	public int compareTo(Portero p){
-        return Math.abs(this.golesRecibidos-p.golesRecibidos);
+		 Portero otroPortero = (Portero) f;
+	        return Math.abs(this.getGolesRecibidos() - otroPortero.getGolesRecibidos());
 	}
 	public boolean jugarConLasManos() {
 		return true;
+	}
+	public short getGolesRecibidos() {
+		return golesRecibidos;
+	}
+	public void setGolesRecibidos(short golesRecibidos) {
+		this.golesRecibidos = golesRecibidos;
+	}
+	public byte getDorsal() {
+		return dorsal;
+	}
+	public void setDorsal() {
+		this.dorsal = dorsal;
 	}
 }

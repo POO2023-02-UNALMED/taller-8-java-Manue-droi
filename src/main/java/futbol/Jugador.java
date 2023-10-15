@@ -19,11 +19,12 @@ public class Jugador extends Futbolista {
 	
 	public String toString(){
         return 
-         super.toString() + " con el dorsal " + dorsal + ". Ha marcado " + golesMarcados;
+         super.toString() + " con el dorsal " + this.dorsal + ". Ha marcado " + this.golesMarcados;
 	}
 	
     public int compareTo(Futbolista f){
-        return Math.abs(this.dorsal-f.dorsal);
+    	Jugador nuevoJugador=(Jugador)f;
+    	return Math.abs( this.getEdad()-nuevoJugador.getEdad());
     }
     public boolean jugarConLasManos() {
 		return false;
