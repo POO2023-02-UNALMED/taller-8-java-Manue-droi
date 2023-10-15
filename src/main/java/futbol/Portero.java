@@ -18,7 +18,7 @@ public class Portero extends Futbolista {
 			super.toString() + "con el dorsal" + this.dorsal + ". Le han marcado" + this.golesRecibidos;
 	}
 	public int compareTo(Portero p){
-		 Portero otroPortero = (Portero) f;
+		 Portero otroPortero = (Portero) p;
 	        return Math.abs(this.getGolesRecibidos() - otroPortero.getGolesRecibidos());
 	}
 	public boolean jugarConLasManos() {
