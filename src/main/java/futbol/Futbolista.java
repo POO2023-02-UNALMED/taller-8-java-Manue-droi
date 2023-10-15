@@ -24,8 +24,7 @@ public class Futbolista implements comparable {
 	abstract boolean jugarConLasManos();
 		
 	public String toString() {
-		return "El futbolista" + getNombre() +" tiene "+ getEdad() + "", y\r\n" 
-				+ "juega de "+ getPosicion();
+		return "El futbolista" + getNombre() +" tiene "+ getEdad()+ "juega de "+ getPosicion();
 	}
 	public String getNombre() {
 		return nombre;

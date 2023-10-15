@@ -18,8 +18,7 @@ public class Jugador extends Futbolista {
 		
 	@override
 	public String toString() {
-		return "El futbolista" + super.getNombre() +" tiene "+ super.getEdad() + "", y\r\n" 
-				+ "juega de "+ super.getPosicion()+ "con el dorsal" + getDorsal()+ ". Ha marcado"+ getGolesMarcados();
+		return "El futbolista" + super.getNombre() + " tiene " + super.getEdad() + "juega de " + super.getPosicion() + "con el dorsal" + getDorsal()+ ". Ha marcado" + getGolesMarcados();
 	}
 	public short getGolesMarcados() {
 		return golesMarcados;
@@ -33,4 +32,5 @@ public class Jugador extends Futbolista {
 	public void setDorsal(byte dorsal) {
 		this.dorsal = dorsal;
 	}
+	
 }
