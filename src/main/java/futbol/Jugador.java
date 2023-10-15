@@ -23,7 +23,7 @@ public class Jugador extends Futbolista {
 	}
 	
     public int compareTo(Futbolista f){
-        return Math.abs(this.edad()-f.edad());
+        return Math.abs(super.getEdad()-f.super.getEdad());
     }
     public boolean jugarConLasManos() {
 		return false;
