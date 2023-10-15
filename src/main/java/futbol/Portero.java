@@ -6,7 +6,7 @@ public class Portero extends Futbolista {
 	
 	
 	public Portero() {
-		super("Maradona", 30, "portero");
+		super();
 		this.golesRecibidos = 150;
 		this.dorsal = 1;
 	}
