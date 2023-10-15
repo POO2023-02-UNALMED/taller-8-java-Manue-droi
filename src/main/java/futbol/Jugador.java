@@ -18,7 +18,7 @@ public class Jugador extends Futbolista {
 	
 	
 	public String toString(){
-        return "El futbolista " + this.nombre + " tiene " + this.edad + ", y juega de " + this.posicion + " con el dorsal " + this.dorsal + ". Ha marcado " + this.golesMarcados;
+        return super.toString() + " con el dorsal " + this.dorsal + ". Ha marcado " + this.golesMarcados;
 	}
 	
     public int compareTo(Futbolista f){
