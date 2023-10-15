@@ -10,7 +10,7 @@ public class Portero extends Futbolista {
 		this.dorsal = dorsal;
 	}
 	public Portero() {
-		this("Maradona", 30, "delantero");
+		this("Maradona", 30, "portero");
 	}
 	public String toString() {
 		return 
