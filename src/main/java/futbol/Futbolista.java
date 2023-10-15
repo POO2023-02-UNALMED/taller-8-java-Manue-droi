@@ -13,8 +13,10 @@ public abstract class Futbolista implements Comparable<Object> {
 		this.edad = edad;
 		this.posicion = posicion;		
 	}
+	
+	
 	public boolean equals (Futbolista f) {
-		if(this == f);
+		return this == f;
 	}
 	public int compareTo(Object o){
 	       return 0;		
